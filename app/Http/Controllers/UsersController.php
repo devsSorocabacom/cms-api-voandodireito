@@ -96,7 +96,7 @@ class UsersController extends Controller
         if($user->role_id == 1 || $user->id == $usuario->id) {
             $title = "Editando: ".$usuario->name;
 
-            return view('cms.usuarios.edit', compact('title', 'categorias', 'usuario', 'roles'));
+            return view('cms.usuarios.edit', compact('title', 'usuario', 'roles'));
 
         } else {
             $title = "Acesso não autorizado";
